@@ -486,7 +486,7 @@ template {
 \*----------------------------------------------------------------------------*/
 body {
   color: #03080C;
-  font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
+  font-family: 'Alegreya Sans', Helvetica, sans-serif;
   font-size: 100%;
   height: 100%;
   min-height: 600px;
@@ -715,7 +715,7 @@ header .subhead {
   color: #03080C;
   cursor: pointer;
   display: block;
-  font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
+  font-family: 'Alegreya Sans', Helvetica, sans-serif;
   font-size: 1.4em;
   padding: 0.3em 1em;
   margin: 2em 0 0 ;
@@ -737,7 +737,7 @@ header .subhead {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
+  font-family: 'Alegreya Sans', Helvetica, sans-serif;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -754,10 +754,12 @@ header .subhead {
 }
 
 .o-slideshow {
-  margin: auto;
+  border: 1px solid #019182;
+  margin: 1.2em auto 1.8em;
   min-width: 740px;
+  padding: 0;
   position: relative;
-  width: 64%;;
+  width: 64%;
 }
 /* Slideshow CSS located under ##Slideshow*/
 
@@ -775,6 +777,10 @@ header .subhead {
   position: relative;
   top: 50%;
   transform: perspective(1px) translateY(-50%);
+}
+
+.u-hide {
+  display: none;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -977,18 +983,14 @@ iframe {
 /*----------------------------------------------------------------------------*\
   ## Guides
 \*----------------------------------------------------------------------------*/
-.enter, .enrol {
-  display: none;
-}
-
 .o-slideshow img {
   height: auto;
   width: 100%;
 }
 
-.o-slideshow caption {
+.o-slideshow .caption {
   background: rgba(255,255,255,0.8);
-  bottom: 3px;
+  bottom: 0px;
   color: #ff954f;
   font-size: 1.3em;
   padding: 0.5em 0;
@@ -1026,7 +1028,7 @@ iframe {
 
 #form {
   max-width: 768px;
-  width: 80%;
+  width: 80%
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3.4em;
